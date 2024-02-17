@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import './App.css';
+import './styling.css';
 
 function App() {
   const [url, setUrl] = useState('');
@@ -49,17 +50,14 @@ function App() {
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           placeholder="Enter URL"
-          style = "width: 498px; height: 29px;"
         />
-        <button type="submit" disabled={loading} style="    padding: 5px; margin: 10px; color: white; background: black;">
-            Take Screenshot
-        </button>
+        <button type="submit" disabled={loading}>Take Screenshot</button>
       </form>
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {thumbnail && <img src={thumbnail} alt="Website Thumbnail" />}
-      {createdAt && <p style="font-size: xx-large;">Created At: {createdAt}</p>}
-      {size && <p style="font-size: xx-large;">Size: {size} Bytes</p>}
+      {createdAt && <p>Created At: {createdAt}</p>}
+      {size && <p>Size: {size} Bytes</p>}
 
     </div>
   );
