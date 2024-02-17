@@ -1,0 +1,15 @@
+#search{
+      width: 498px;
+    height: 29px;
+}
+
+button{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    background: black;
+}
+
+p{
+  font-size: xx-large;
+}
