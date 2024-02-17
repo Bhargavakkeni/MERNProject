@@ -1,0 +1,17 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "Node.js server for the application",
+    "main": "server.mjs",  
+    "scripts": {
+      "start": "node --experimental-modules server.mjs" 
+    },
+    "dependencies": {
+      "express": "^4.17.1",     
+      "cloudinary": "^1.26.0",  
+      "body-parser": "^1.19.0", 
+      "cors": "^2.8.5",
+      "node-fetch": "^3.0.0"          
+    }
+  }
+  
