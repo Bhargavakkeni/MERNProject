@@ -50,6 +50,8 @@ function App() {
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           placeholder="Enter URL"
+          id="search"
+          autofocus
         />
         <button type="submit" disabled={loading}>Take Screenshot</button>
       </form>
