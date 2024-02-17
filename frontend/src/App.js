@@ -17,7 +17,7 @@ function App() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:5000/take-screenshot', {
+      const response = await fetch('https://backend-2o26.onrender.com/take-screenshot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
